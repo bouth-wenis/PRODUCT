@@ -1,0 +1,48 @@
+PROCEDURE dot_product ()
+VAR
+    tab v(3):FLOAT
+    tab u(3):FLOAT
+    i:INTEGER
+    p:FLOAT
+BEGIN
+    FOR i FROM 0 TO 2 STEP 1  DO
+        whrite("donner l'element",i+1,"de la vecteur v")
+        read(v(i))
+        whrite("donner l'element",i+1,"de la vvecteur u")
+        read(u(i))
+    END_FOR
+    p=0
+    FOR i FROM 0 TO 2 STEP 1 DO
+    p=p+v(i)*u(i)
+    END_IF
+    write("le produit scalaire est:",p)
+PROCEDURE vect_orthogonaux()
+BEGIN
+dot_product(p:FLOAT)
+IF (p=0) THEN
+    whrite("les desux vecteurs sont orthogonaux")
+ELSE
+    whtite("les desux vecteurs ne sont pas orthogonaux")
+END_IF
+FUNCTION dot_product(u:tab,v:tab) : INTEGER
+VAR
+tab v(3):FLOAT
+    tab u(3):FLOAT
+    i:INTEGER
+    p:FLOAT
+
+    BEGIN
+    FOR i FROM 0 TO 2 STEP 1  DO
+        whrite("donner l'element",i+1,"de la vecteur v")
+        read(v(i))
+        whrite("donner l'element",i+1,"de la vvecteur u")
+        read(u(i))
+    END_FOR
+    p=0
+    FOR i FROM 0 TO 2 STEP 1 DO
+    p=p+v(i)*u(i)
+    END_IF
+
+    RETURN P ;
+END
+
